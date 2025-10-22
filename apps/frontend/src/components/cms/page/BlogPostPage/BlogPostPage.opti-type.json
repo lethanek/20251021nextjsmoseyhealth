@@ -50,24 +50,24 @@
         "enum": {
           "values": [
             {
-              "displayName": "Savings",
-              "value": "Savings"
+              "displayName": "Conditions",
+              "value": "Conditions"
             },
             {
-              "displayName": "Credit",
-              "value": "Credit"
+              "displayName": "Insurance",
+              "value": "Insurance"
             },
             {
-              "displayName": "Mortgage",
-              "value": "Mortgage"
+              "displayName": "Prevention",
+              "value": "Prevention"
             },
             {
-              "displayName": "Retirement",
-              "value": "Retirement"
+              "displayName": "Treatments",
+              "value": "Treatments"
             },
             {
-              "displayName": "Investment",
-              "value": "Investment"
+              "displayName": "Wellness",
+              "value": "Wellness"
             }
           ]
         }
