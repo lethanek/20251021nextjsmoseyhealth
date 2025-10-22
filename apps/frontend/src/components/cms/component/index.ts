@@ -16,6 +16,7 @@ import LayoutSettingsBlockComponent from "./LayoutSettingsBlock";
 import ImageElementComponent from "./ImageElement";
 import HeroBlockComponent from "./HeroBlock";
 import HeadingElementComponent from "./HeadingElement";
+import CustomHeadingElementComponent from "./CustomHeadingElement";
 import ContinueReadingComponentComponent from "./ContinueReadingComponent";
 import ContentRecsElementComponent from "./ContentRecsElement";
 import CarouselBlockComponent from "./CarouselBlock";
@@ -89,6 +90,10 @@ export const ComponentFactory : ComponentTypeDictionary = [
     { 
         type: "HeadingElement", 
         component: HeadingElementComponent 
+    },
+    { 
+        type: "CustomHeadingElement", 
+        component: CustomHeadingElementComponent 
     },
     { 
         type: "ContinueReadingComponent", 

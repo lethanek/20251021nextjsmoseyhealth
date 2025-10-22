@@ -24,6 +24,7 @@ type Documents = {
     "fragment ContentRecsElementData on ContentRecsElement {\n  ElementDeliveryApiKey\n  ElementRecommendationCount\n}": typeof types.ContentRecsElementDataFragmentDoc,
     "fragment ContinueReadingComponentData on ContinueReadingComponent {\n  topline\n  shared\n  heading\n  content {\n    ...IContentData\n    ...BlockData\n  }\n}": typeof types.ContinueReadingComponentDataFragmentDoc,
     "query getSharedContinueReading($locale: [Locales]) {\n  ContinueReadingComponent(where: {shared: {eq: true}}, locale: $locale) {\n    total\n    item {\n      ...IContentData\n      ...ContinueReadingComponentData\n    }\n  }\n}": typeof types.getSharedContinueReadingDocument,
+    "fragment CustomHeadingElementData on CustomHeadingElement {\n  title\n}": typeof types.CustomHeadingElementDataFragmentDoc,
     "fragment HeadingElementData on HeadingElement {\n  headingText\n}": typeof types.HeadingElementDataFragmentDoc,
     "fragment HeroBlockData on HeroBlock {\n  heroImage: HeroImage {\n    ...ReferenceData\n  }\n  eyebrow: Eyebrow\n  heroHeading: Heading\n  heroSubheading: SubHeading\n  heroDescription: Description {\n    json\n    html\n  }\n  heroColor: HeroColor\n  heroButton: HeroButton {\n    ...ButtonBlockPropertyData\n  }\n}": typeof types.HeroBlockDataFragmentDoc,
     "fragment ImageElementData on ImageElement {\n  altText\n  imageLink {\n    ...ReferenceData\n  }\n}": typeof types.ImageElementDataFragmentDoc,
@@ -73,6 +74,7 @@ const documents: Documents = {
     "fragment ContentRecsElementData on ContentRecsElement {\n  ElementDeliveryApiKey\n  ElementRecommendationCount\n}": types.ContentRecsElementDataFragmentDoc,
     "fragment ContinueReadingComponentData on ContinueReadingComponent {\n  topline\n  shared\n  heading\n  content {\n    ...IContentData\n    ...BlockData\n  }\n}": types.ContinueReadingComponentDataFragmentDoc,
     "query getSharedContinueReading($locale: [Locales]) {\n  ContinueReadingComponent(where: {shared: {eq: true}}, locale: $locale) {\n    total\n    item {\n      ...IContentData\n      ...ContinueReadingComponentData\n    }\n  }\n}": types.getSharedContinueReadingDocument,
+    "fragment CustomHeadingElementData on CustomHeadingElement {\n  title\n}": types.CustomHeadingElementDataFragmentDoc,
     "fragment HeadingElementData on HeadingElement {\n  headingText\n}": types.HeadingElementDataFragmentDoc,
     "fragment HeroBlockData on HeroBlock {\n  heroImage: HeroImage {\n    ...ReferenceData\n  }\n  eyebrow: Eyebrow\n  heroHeading: Heading\n  heroSubheading: SubHeading\n  heroDescription: Description {\n    json\n    html\n  }\n  heroColor: HeroColor\n  heroButton: HeroButton {\n    ...ButtonBlockPropertyData\n  }\n}": types.HeroBlockDataFragmentDoc,
     "fragment ImageElementData on ImageElement {\n  altText\n  imageLink {\n    ...ReferenceData\n  }\n}": types.ImageElementDataFragmentDoc,
@@ -166,6 +168,10 @@ export function gql(source: "fragment ContinueReadingComponentData on ContinueRe
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
 export function gql(source: "query getSharedContinueReading($locale: [Locales]) {\n  ContinueReadingComponent(where: {shared: {eq: true}}, locale: $locale) {\n    total\n    item {\n      ...IContentData\n      ...ContinueReadingComponentData\n    }\n  }\n}"): (typeof documents)["query getSharedContinueReading($locale: [Locales]) {\n  ContinueReadingComponent(where: {shared: {eq: true}}, locale: $locale) {\n    total\n    item {\n      ...IContentData\n      ...ContinueReadingComponentData\n    }\n  }\n}"];
+/**
+ * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function gql(source: "fragment CustomHeadingElementData on CustomHeadingElement {\n  title\n}"): (typeof documents)["fragment CustomHeadingElementData on CustomHeadingElement {\n  title\n}"];
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

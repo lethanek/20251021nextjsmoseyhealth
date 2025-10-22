@@ -1,0 +1,3 @@
+fragment CustomHeadingElementData on CustomHeadingElement {
+  title
+}

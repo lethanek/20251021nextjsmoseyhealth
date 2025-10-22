@@ -136,6 +136,11 @@ export const ContentRecsElementDataFragmentDoc = gql`
   ElementRecommendationCount
 }
     `;
+export const CustomHeadingElementDataFragmentDoc = gql`
+    fragment CustomHeadingElementData on CustomHeadingElement {
+  title
+}
+    `;
 export const HeadingElementDataFragmentDoc = gql`
     fragment HeadingElementData on HeadingElement {
   headingText
@@ -368,6 +373,7 @@ export const ContinueReadingComponentDataFragmentDoc = gql`
     ...CarouselBlockData
     ...ContentRecsElementData
     ...ContinueReadingComponentData
+    ...CustomHeadingElementData
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -399,6 +405,7 @@ export const CarouselBlockDataFragmentDoc = gql`
     ...CarouselBlockData
     ...ContentRecsElementData
     ...ContinueReadingComponentData
+    ...CustomHeadingElementData
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -428,6 +435,7 @@ export const CompositionComponentNodeDataFragmentDoc = gql`
     ...CarouselBlockData
     ...ContentRecsElementData
     ...ContinueReadingComponentData
+    ...CustomHeadingElementData
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -515,6 +523,7 @@ export const BlogPostPageDataFragmentDoc = gql`
     ...CarouselBlockData
     ...ContentRecsElementData
     ...ContinueReadingComponentData
+    ...CustomHeadingElementData
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -559,6 +568,7 @@ export const LandingPageDataFragmentDoc = gql`
     ...CarouselBlockData
     ...ContentRecsElementData
     ...ContinueReadingComponentData
+    ...CustomHeadingElementData
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -583,6 +593,7 @@ export const LandingPageDataFragmentDoc = gql`
     ...CarouselBlockData
     ...ContentRecsElementData
     ...ContinueReadingComponentData
+    ...CustomHeadingElementData
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -683,6 +694,7 @@ ${IContentListItemFragmentDoc}
 ${ImageMediaComponentDataFragmentDoc}
 ${VideoMediaComponentDataFragmentDoc}
 ${ContentRecsElementDataFragmentDoc}
+${CustomHeadingElementDataFragmentDoc}
 ${HeadingElementDataFragmentDoc}
 ${HeroBlockDataFragmentDoc}
 ${ReferenceDataFragmentDoc}
@@ -1091,6 +1103,7 @@ export const getContentByIdDocument = gql`
       ...CarouselBlockData
       ...ContentRecsElementData
       ...ContinueReadingComponentData
+      ...CustomHeadingElementData
       ...HeadingElementData
       ...HeroBlockData
       ...ImageElementData
@@ -1127,6 +1140,7 @@ ${ImageMediaComponentDataFragmentDoc}
 ${VideoMediaComponentDataFragmentDoc}
 ${ContentRecsElementDataFragmentDoc}
 ${ContinueReadingComponentDataFragmentDoc}
+${CustomHeadingElementDataFragmentDoc}
 ${HeadingElementDataFragmentDoc}
 ${HeroBlockDataFragmentDoc}
 ${ReferenceDataFragmentDoc}
@@ -1195,6 +1209,7 @@ ${ImageMediaComponentDataFragmentDoc}
 ${VideoMediaComponentDataFragmentDoc}
 ${ContentRecsElementDataFragmentDoc}
 ${ContinueReadingComponentDataFragmentDoc}
+${CustomHeadingElementDataFragmentDoc}
 ${HeadingElementDataFragmentDoc}
 ${HeroBlockDataFragmentDoc}
 ${ButtonBlockPropertyDataFragmentDoc}
