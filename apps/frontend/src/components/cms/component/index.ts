@@ -16,6 +16,7 @@ import LayoutSettingsBlockComponent from "./LayoutSettingsBlock";
 import ImageElementComponent from "./ImageElement";
 import HeroBlockComponent from "./HeroBlock";
 import HeadingElementComponent from "./HeadingElement";
+import DanOHellloWorld01Component from "./DanOHellloWorld01";
 import CustomHeadingElementComponent from "./CustomHeadingElement";
 import ContinueReadingComponentComponent from "./ContinueReadingComponent";
 import ContentRecsElementComponent from "./ContentRecsElement";
@@ -90,6 +91,10 @@ export const ComponentFactory : ComponentTypeDictionary = [
     { 
         type: "HeadingElement", 
         component: HeadingElementComponent 
+    },
+    { 
+        type: "DanOHellloWorld01", 
+        component: DanOHellloWorld01Component 
     },
     { 
         type: "CustomHeadingElement", 

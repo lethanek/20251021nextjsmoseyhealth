@@ -141,6 +141,11 @@ export const CustomHeadingElementDataFragmentDoc = gql`
   title
 }
     `;
+export const DanOHellloWorld01DataFragmentDoc = gql`
+    fragment DanOHellloWorld01Data on DanOHellloWorld01 {
+  Title
+}
+    `;
 export const HeadingElementDataFragmentDoc = gql`
     fragment HeadingElementData on HeadingElement {
   headingText
@@ -374,6 +379,7 @@ export const ContinueReadingComponentDataFragmentDoc = gql`
     ...ContentRecsElementData
     ...ContinueReadingComponentData
     ...CustomHeadingElementData
+    ...DanOHellloWorld01Data
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -406,6 +412,7 @@ export const CarouselBlockDataFragmentDoc = gql`
     ...ContentRecsElementData
     ...ContinueReadingComponentData
     ...CustomHeadingElementData
+    ...DanOHellloWorld01Data
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -436,6 +443,7 @@ export const CompositionComponentNodeDataFragmentDoc = gql`
     ...ContentRecsElementData
     ...ContinueReadingComponentData
     ...CustomHeadingElementData
+    ...DanOHellloWorld01Data
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -524,6 +532,7 @@ export const BlogPostPageDataFragmentDoc = gql`
     ...ContentRecsElementData
     ...ContinueReadingComponentData
     ...CustomHeadingElementData
+    ...DanOHellloWorld01Data
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -569,6 +578,7 @@ export const LandingPageDataFragmentDoc = gql`
     ...ContentRecsElementData
     ...ContinueReadingComponentData
     ...CustomHeadingElementData
+    ...DanOHellloWorld01Data
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -594,6 +604,7 @@ export const LandingPageDataFragmentDoc = gql`
     ...ContentRecsElementData
     ...ContinueReadingComponentData
     ...CustomHeadingElementData
+    ...DanOHellloWorld01Data
     ...HeadingElementData
     ...HeroBlockData
     ...ImageElementData
@@ -695,6 +706,7 @@ ${ImageMediaComponentDataFragmentDoc}
 ${VideoMediaComponentDataFragmentDoc}
 ${ContentRecsElementDataFragmentDoc}
 ${CustomHeadingElementDataFragmentDoc}
+${DanOHellloWorld01DataFragmentDoc}
 ${HeadingElementDataFragmentDoc}
 ${HeroBlockDataFragmentDoc}
 ${ReferenceDataFragmentDoc}
@@ -1104,6 +1116,7 @@ export const getContentByIdDocument = gql`
       ...ContentRecsElementData
       ...ContinueReadingComponentData
       ...CustomHeadingElementData
+      ...DanOHellloWorld01Data
       ...HeadingElementData
       ...HeroBlockData
       ...ImageElementData
@@ -1141,6 +1154,7 @@ ${VideoMediaComponentDataFragmentDoc}
 ${ContentRecsElementDataFragmentDoc}
 ${ContinueReadingComponentDataFragmentDoc}
 ${CustomHeadingElementDataFragmentDoc}
+${DanOHellloWorld01DataFragmentDoc}
 ${HeadingElementDataFragmentDoc}
 ${HeroBlockDataFragmentDoc}
 ${ReferenceDataFragmentDoc}
@@ -1210,6 +1224,7 @@ ${VideoMediaComponentDataFragmentDoc}
 ${ContentRecsElementDataFragmentDoc}
 ${ContinueReadingComponentDataFragmentDoc}
 ${CustomHeadingElementDataFragmentDoc}
+${DanOHellloWorld01DataFragmentDoc}
 ${HeadingElementDataFragmentDoc}
 ${HeroBlockDataFragmentDoc}
 ${ButtonBlockPropertyDataFragmentDoc}
