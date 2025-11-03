@@ -8,11 +8,11 @@ import { DanOHellloWorld01DataFragmentDoc, type DanOHellloWorld01DataFragment } 
 export const DanOHellloWorld01Component : CmsComponent<DanOHellloWorld01DataFragment> = ({ data, editProps }) => {
     const componentName = 'Dan O Hello World 01'
     const componentInfo = ''
-    return <CmsEditable {...editProps}>
+    return <div>
         
         <div>{ data?.Title }</div>
 
-    </CmsEditable>
+     </div>
 }
 DanOHellloWorld01Component.displayName = "Dan O Hello World 01 (Component/DanOHellloWorld01)"
 DanOHellloWorld01Component.getDataFragment = () => ['DanOHellloWorld01Data', DanOHellloWorld01DataFragmentDoc]
