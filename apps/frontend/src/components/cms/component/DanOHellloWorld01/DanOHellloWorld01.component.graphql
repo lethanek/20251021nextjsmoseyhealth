@@ -1,3 +1,4 @@
 fragment DanOHellloWorld01Data on DanOHellloWorld01 {
   Title
+  Summary { json, html }
 }

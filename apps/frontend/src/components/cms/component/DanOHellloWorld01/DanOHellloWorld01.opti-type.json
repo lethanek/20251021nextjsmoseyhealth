@@ -20,6 +20,17 @@
       "group": "Information",
       "sortOrder": 0,
       "editorSettings": {}
+    },
+    "Summary": {
+      "type": "string",
+      "format": "html",
+      "displayName": "Summary",
+      "description": "",
+      "localized": false,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 100,
+      "editorSettings": {}
     }
   }
 }

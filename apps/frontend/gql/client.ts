@@ -144,6 +144,10 @@ export const CustomHeadingElementDataFragmentDoc = gql`
 export const DanOHellloWorld01DataFragmentDoc = gql`
     fragment DanOHellloWorld01Data on DanOHellloWorld01 {
   Title
+  Summary {
+    json
+    html
+  }
 }
     `;
 export const HeadingElementDataFragmentDoc = gql`
