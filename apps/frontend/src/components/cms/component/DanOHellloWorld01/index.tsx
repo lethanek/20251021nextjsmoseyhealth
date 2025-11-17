@@ -12,7 +12,6 @@ export const DanOHellloWorld01Component : CmsComponent<DanOHellloWorld01DataFrag
 
 <div> {data?.Title}</div>
 
-<div><div dangerouslySetInnerHTML={{ __html: data?.Summary?.html }} /></div>
 
         <div className="font-bold italic">{ componentName }</div>
         <div>{ componentInfo }</div>
